@@ -1,0 +1,123 @@
+
+.section {
+    min-height: 200px;
+    width: 100%;
+
+    .section-decoration {
+        max-width: 100%;
+        display: flex;
+
+        .decoration-top-left {
+            width: 0px;
+            height: 0px;
+            margin-top: 12px;
+            border-style: solid;
+            border-width: 24px 0 24px 30vw;
+            border-color: transparent transparent transparent #ff9399;
+            transform: rotate(0deg);
+        }
+
+        .decoration-top-right {
+            height: 36px;
+            width: 71%;
+            margin-left: -1vw;
+            border-style: solid;
+            border-width: 36px 69vw 36px 0;
+            border-color: transparent #ff9399 transparent transparent;
+            z-index: 4;
+        }
+
+        .decoration-bottom-right {
+            width: 0px;
+            height: 0px;
+            margin-top: -24px;            
+            margin-left: -1.5vw;
+            border-style: solid;
+            border-width: 24px 30vw 24px 0;
+            border-color: transparent #ff9399 transparent transparent;
+            transform: rotate(0deg);
+        }
+
+        .decoration-bottom-left {
+            height: 36px;
+            width: 71vw;
+            margin-top: -36px;
+            border-style: solid;
+            border-width: 36px 0px 36px 70vw;
+            border-color: transparent transparent transparent #ff9399;
+            z-index: 4;
+        }
+    }
+
+    .background-red {
+        background-color: #990000;
+        color: #fff;
+        padding: 100px 5% 140px 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .background-white {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-content {
+        min-height: 200px;
+        justify-content: space-between;
+
+        margin-top: -36px;
+        padding: 100px 5% 100px 5%;
+
+        .content-text {
+            width: 45%;
+
+            h3 {
+                font-size: 2em;
+                margin-bottom: 6px;
+            }
+            
+            b {
+                margin-bottom: 24px;
+            }
+        }
+
+        .content-image {
+            width: 50%;
+            // margin-top: -36px;
+            z-index: 8;
+            min-height: 400px;
+
+            img {
+                min-width: 100%;
+                width: 100%;
+                // min-height: 400px;
+                background-color: grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section {
+        .background-red {
+            flex-direction: column-reverse;
+        }
+
+        .background-white {
+            flex-direction: column;
+        }
+
+        .section-content {
+
+            .content-image {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            .content-text {
+                width: 100%;
+            }
+        }
+    }
+}

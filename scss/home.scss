@@ -1,0 +1,154 @@
+header {
+    width: 100%; 
+
+    .header-decoration-top {
+        width: 100%;
+        height: 8px;
+        background-color: #990000;
+    }
+
+    .header-decoration-bottom {
+        width: 100%;
+        display: flex;
+        position: absolute;
+
+        .decoration-bottom-left {
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 36px 60vw 0 0;
+            border-color: #FFFFFF9F transparent transparent transparent;
+            transform: rotate(0deg);
+        }
+
+        .decoration-bottom-right {
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            margin-left: -1vw;
+            border-width: 0 41vw 36px 0;
+            border-color: transparent #FFFFFF9F transparent transparent;
+            transform: rotate(0deg);
+        }
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 5%;
+
+        .iu-logo {
+            height: 30px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+    
+            h1 {
+                font-size: 1.2em;
+                margin-bottom: 0;
+            }
+        
+            h2 {
+                font-size: 1em;
+                color: #434f5e;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+.main {
+    min-height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 5% 100px 5%;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: -100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .main-content {
+        width: 45%;
+
+        h2 {
+            font-size: 2em;
+        }
+    }
+
+    nav {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border: red 1px solid;
+
+        * {
+            border: red 1px solid;
+        }
+    
+        a {
+            width: 100%;
+            display: block;
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #fff;
+    
+            .link-bg {
+                width: 80%;
+                height: 30px;
+                margin-left: 50%;
+                margin-top: -20px;
+                // border-bottom: 4px #990000 solid;
+                // border-right: 4px #990000 solid;
+            }
+        }
+    
+        a:hover {
+            font-weight: bold;
+            // color: #006298;
+            // color: #990000;
+    
+            .link-bg {
+                width: 120%;
+                margin-left: -20%;
+    
+                //FILL
+                height: 44px;
+                background-color: #990000;
+    
+                //IMAGE
+                // height: 60px;
+                // border: none;
+                // opacity: 50%;
+                // background-image: url("../assets/image-test.png");
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .main {
+        flex-direction: column;
+        padding: 100px 5% 200px 5%;
+
+        .main-content {
+            width: 100%;
+        }
+
+        nav {
+            width: 100%;
+        }
+    }
+}

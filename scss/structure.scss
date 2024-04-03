@@ -1,0 +1,27 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,button,span,b,div {
+    font-family: Benton Sans;
+}
+
+@font-face {
+    font-family: Benton Sans;
+    src: url(../assets/fonts/benton-sans-regular.ttf);
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: .9em;
+    }
+}
