@@ -10,42 +10,66 @@
     <header>
         <div class="header-decoration-top"></div>
         <div class="header-content">
-            <img class="iu-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Indiana_Hoosiers_logo.svg" alt="Indiana University Trident Logo">
+            <div class="header-logo">
+                <img class="iu-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Indiana_Hoosiers_logo.svg" alt="Indiana University Trident Logo">
+            </div>
             <div class="header-title">
                 <h1>2024 Internship Showcase</h1>
                 <h2>DUE Web Internship</h2>
             </div>
-            <a class="linkedin-link" href="">LinkedIn</a>
+            <div class="header-links">
+                <a class="linkedin-link" href="">LinkedIn</a>
+            </div>
         </div>
         <div class="header-decoration-bottom">
             <div class="decoration-bottom-left"></div>
             <div class="decoration-bottom-right"></div>
         </div>
     </header>
-    <div id="main" class="main">
+    <div id="main" class="main image" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('assets/basecamp.jpg');">
         <div class="main-content">
             <h2>Department of Undergraduate Education (DUE) Web Internship</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsa fugiat? Suscipit totam fugit soluta fugiat a quas sed eaque quasi placeat, maxime ipsam minus expedita temporibus necessitatibus vel quia! Ratione animi, aperiam cum dolorem harum ea nisi! Quasi sed cupiditate id autem voluptate velit! Voluptas odit deleniti neque inventore autem ullam asperiores libero, sit dolorum ab. Exercitationem, incidunt esse. Maiores illo nulla deserunt rerum voluptatum, alias ducimus odit hic error amet consectetur. Ducimus, tenetur deleniti. Quaerat natus, unde, quis ratione minima maxime explicabo aspernatur voluptate expedita perspiciatis dolorem doloremque.</p>
+            <b>Kylee Dicken</b>
+            <p>It has nearly been a year since I began as a Web Intern with DUE in May of 2023. In that time I have been able to experience different ways my studies in Web Development can be used towards digital communcations. From website management systems to building emails to user experience and accessibility, I have learned many tools.</p>
+            <br>
+            <a class="button" href="#overview">Learn about the experience</a>
         </div>
         <nav>
             <ol>
                 <li>
-                    <a href="#wcms">WCMS
+                    <a href="#wcms" onmouseover="hoverBackgroundChange('wcms')">WCMS
                         <div class="link-bg"></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#salesforce">Salesforce
+                    <a href="#salesforce" onmouseover="hoverBackgroundChange('salesforce')">Salesforce
                         <div class="link-bg"></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#servicenow">Service Now
+                    <a href="#servicenow" onmouseover="hoverBackgroundChange('servicenow')">Service Now
+                        <div class="link-bg"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#basecamp" onmouseover="hoverBackgroundChange('basecamp')">Basecamp
+                        <div class="link-bg"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#siteimprove" onmouseover="hoverBackgroundChange('siteimprove')">SiteImprove
                         <div class="link-bg"></div>
                     </a>
                 </li>
             </ol>
         </nav> 
+    </div>
+
+    <div id="overview" class="section">
+        <div class="section-content center">
+            <p>Each day there are a couple of typical tasks to complete. The most important first is any open tickets in <a href="#servicenow">Servicenow</a>. We will first send the tickets ID into the team's ticket <a href="https://slack.com/">Slack</a> channel so everyone knows someone is working on it. Then, we use the various tools we have, like <a href="#wcms">WCMS</a> or <a href="#salesforce">Salesforce</a>, to complete the request and communicate with the client further when needed. Once there are no open tickets, we can then work on any upcoming projects assigned in <a href="#basecamp">Basecamp</a>. These projects typically include creating an email in <a href="#salesforce">Salesforce</a> or build the page for a  <a href="https://honors.iupui.edu/news-events/_stories/faith-odiete.html">news story</a> created by a content intern.</p> 
+            <p>I am very grateful to this internship for all it has taught me over this year here. From the various little tips and tricks to the major experiences with not only different systems and tools, but life-skills as well. There are many things I have taken from here and use frequently now on my own, like all of the keyboard shortcuts I wouldn't had learned about otherwise, how to make websites accessible for everyone the ways of styling content on the web to be reusable chunks that keep a website looking consistent. I now feel much more capable than I did previously.</p>
+        </div>
     </div>
 
     <div id="wcms" class="section">
@@ -58,15 +82,17 @@
                 <h3>Content Management System (WCMS)</h3>
                 <b>Website managment tool</b>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum autem odio eaque, ad tenetur omnis in architecto quaerat, eius libero vero accusantium laboriosam odit minus numquam provident fuga dolorum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam asperiores incidunt rem accusantium quaerat repellat, culpa perspiciatis pariatur placeat nisi. Sequi cumque omnis sapiente, aliquam numquam itaque reiciendis aut.
+                <p>The Web Content Management System (WCMS) is Indiana University's website managment tool built from <a href="https://www.hannonhill.com/products/cascade-cms/index.html">Hannon Hill's Cascade CMS</a>. It is one of the main tools used at DUE as it is what is used to create, edit, publish and manage the over 30 individual websites overseen by the office.
+                </p><p>
+                WCMS was something new coming from studying and writing code ourselves as the system is more form based, similar to something like <a href="https://wordpress.com/">Wordpress</a>. In WCMS each page is built with some settings, like display name, navigation, or banner, then sections with chunks inside of those sections. There are many different kinds of chunks like text, images, accordions, videos, feeds, etc.
                 </p>
+                <p>I found it very interesting how websites were set-up here and I've began using it in my own websites. It is very useful to know how to manage websites on such a large scale for something as big as a university.</p>
             </div>
             <div class="content-image">
-                <img name="image" src="" alt="Description of the image screenshot">
+                <img name="image" src="assets/wcms.jpg" alt="The edit screen for an example CMS website">
                 <br>
                 <br>
-                <label for="image">Description of the image screenshot</label>         
+                <label for="image">The edit screen for an example CMS website</label>         
             </div>
         </div>
         <div class="section-decoration">
@@ -78,19 +104,17 @@
     <div id="salesforce" class="section">
         <div class="section-content background-white">
             <div class="content-image">
-                <img name="image" src="" alt="Description of the image screenshot">
+                <img name="image" src="assets/salesforce.jpg" alt="An example email being built in Salesforce">
                 <br>
                 <br>
-                <label for="image">Description of the image screenshot</label>         
+                <label for="image">An example email being built in Salesforce</label>         
             </div>
             <div class="content-text">
                 <h3>Salesforce Marketing Cloud</h3>
                 <b>Email communications creation and sending</b>
                 <br>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum autem odio eaque, ad tenetur omnis in architecto quaerat, eius libero vero accusantium laboriosam odit minus numquam provident fuga dolorum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam asperiores incidunt rem accusantium quaerat repellat, culpa perspiciatis pariatur placeat nisi. Sequi cumque omnis sapiente, aliquam numquam itaque reiciendis aut.
-                Laborum nemo quam, obcaecati quia dignissimos sequi voluptatem ad magni, laboriosam cumque dicta placeat delectus fugit necessitatibus ut explicabo! Delectus eius dolorem veritatis, explicabo alias odio reprehenderit et facere dolorum?
+                <p>Salesforce is the system used to not only build, but send mass communication emails out as well. I had not built emails prior to learning salesforce here, but I quickly enjoyed the process. I was surprised to learn they can be built just like any website. Emails are made with an IU Framework, using many pre-built chunks designed to work for all devices which are able to be pieced together and added to.
                 </p>
             </div>
         </div>
@@ -106,17 +130,14 @@
                 <h3>Service Now</h3>
                 <b>Ticketing system</b>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum autem odio eaque, ad tenetur omnis in architecto quaerat, eius libero vero accusantium laboriosam odit minus numquam provident fuga dolorum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem maiores odio voluptate quos recusandae ad quod numquam aspernatur, excepturi accusamus vitae? Facere ipsum est saepe eum nam provident praesentium!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam asperiores incidunt rem accusantium quaerat repellat, culpa perspiciatis pariatur placeat nisi. Sequi cumque omnis sapiente, aliquam numquam itaque reiciendis aut.
-                Sapiente magnam aut natus voluptatibus libero doloremque accusantium porro iure perferendis fuga, earum quia? Ullam vel aspernatur eos soluta accusantium, asperiores voluptas eius libero culpa, magni laudantium! Consequatur, maxime nobis?
+                <p>Servicenow is used to manage any requests sent to DUE Communications, referred to as tickets. These include requests for the communications side, typically assigned to DUE.COMM, and web support tickets, typically assigned to DUE.WEB. Web support tickets can include many various things from uploading/updating digital signage, making updates to a webpage or a person's profile, managing the access to certain people, uploading videos for captioning, adding or removing pages/content on websites or even sending out an email.
                 </p>
             </div>
             <div class="content-image">
-                <img name="image" src="" alt="Description of the image screenshot">
+                <img name="image" src="assets/servicenow.jpg" alt="The main page of Servicenow, showing the currently open tickets">
                 <br>
                 <br>
-                <label for="image">Description of the image screenshot</label>         
+                <label for="image">The main page of Servicenow, showing the currently open tickets</label>         
             </div>
         </div>
         <div class="section-decoration">
@@ -138,10 +159,12 @@
                 <b>Projects and documentation management</b>
                 <br>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum autem odio eaque, ad tenetur omnis in architecto quaerat, eius libero vero accusantium laboriosam odit minus numquam provident fuga dolorum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam asperiores incidunt rem accusantium quaerat repellat, culpa perspiciatis pariatur placeat nisi. Sequi cumque omnis sapiente, aliquam numquam itaque reiciendis aut.
-                Laborum nemo quam, obcaecati quia dignissimos sequi voluptatem ad magni, laboriosam cumque dicta placeat delectus fugit necessitatibus ut explicabo! Delectus eius dolorem veritatis, explicabo alias odio reprehenderit et facere dolorum?
+                <p><a href="https://basecamp.com/">Basecamp</a> is an extremely helpful tool as it performs many functions which help keep not only myself, but the whole office organized. The two main features I use most frequently include viewing any upcoming project assignments I need to complete and searching the tons of documentation created by the office for any questions I may have.
                 </p>
+                <p>
+                Basecamp has individual tabs for each project created where everyone working on the specific project and the files for it can be added. The most common projects I recieve here are creating an email in <a href="#salesforce">Salesforce</a> or build the page for a  <a href="https://honors.iupui.edu/news-events/_stories/faith-odiete.html">news story</a> created by one of the Content Interns. The most helpful feature here is being able to break-down everthing into individual to-dos and assigning them to people with due dates which are displayed on an 'upcoming assignments' for that person. Because of Basecamp, I always know what I need to be working on and I never feel lost.
+                </p>
+                <p>These individual project tabs are not only used for each project but they also hold the main spaces for the web and communications teams in the office. In these are many folders of documentation for everything the office does which is extremely helpful for any task that may require a refresher, especially the ones done not super frequently like uploading videos or accessing the internal files, like <i>.htaccess</i>, of a website.</p>
             </div>
         </div>
     </div>
@@ -156,17 +179,14 @@
                 <h3>SiteImprove</h3>
                 <b>Website accessibility</b>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum autem odio eaque, ad tenetur omnis in architecto quaerat, eius libero vero accusantium laboriosam odit minus numquam provident fuga dolorum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem maiores odio voluptate quos recusandae ad quod numquam aspernatur, excepturi accusamus vitae? Facere ipsum est saepe eum nam provident praesentium!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam asperiores incidunt rem accusantium quaerat repellat, culpa perspiciatis pariatur placeat nisi. Sequi cumque omnis sapiente, aliquam numquam itaque reiciendis aut.
-                Sapiente magnam aut natus voluptatibus libero doloremque accusantium porro iure perferendis fuga, earum quia? Ullam vel aspernatur eos soluta accusantium, asperiores voluptas eius libero culpa, magni laudantium! Consequatur, maxime nobis?
+                <p><a href="https://www.siteimprove.com/">SiteImprove</a> searches through any website and provides a detailed list of any accessibility issue it finds.  
                 </p>
             </div>
             <div class="content-image">
-                <img name="image" src="" alt="Description of the image screenshot">
+                <img name="image" src="assets/siteimprove.jpg" alt="Description of the image screenshot">
                 <br>
                 <br>
-                <label for="image">Description of the image screenshot</label>         
+                <label for="image">Page on SiteImprove displaying accessibility issues found on a website</label>         
             </div>
         </div>
         <div class="section-decoration">
@@ -174,5 +194,23 @@
             <div class="decoration-bottom-right"></div>
         </div>
     </div>
+    <footer>
+        <b>Created by Kylee Dicken</b>
+        <p>2024</p>
+    </footer>
+
+    <script>
+        var sections = ['wcms', 'salesforce', 'servicenow', 'basecamp', 'siteimprove']
+        function hoverBackgroundChange(name) {
+            console.log("out", name, document.getElementById("main").style);
+            document.getElementById("main").style.backgroundImage = "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('assets/" + name + ".jpg')"
+        }
+
+        window.setInterval(function(){
+            var ran = sections[Math.floor(Math.random() * 5)];
+            console.log(ran);
+            hoverBackgroundChange(ran);
+        }, 10000);
+    </script>
 </body>
 </html>

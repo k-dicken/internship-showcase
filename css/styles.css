@@ -12,6 +12,31 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6, p, a, button, span, b, div {
   font-family: Benton Sans; }
 
+p {
+  line-height: 24px; }
+
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+a {
+  color: #006298; }
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-weight: bold;
+  color: #990000;
+  text-decoration: none;
+  background-color: white;
+  cursor: pointer; }
+
+.button:hover {
+  background-color: transparent;
+  color: white; }
+
 @font-face {
   font-family: Benton Sans;
   src: url(../assets/fonts/benton-sans-regular.ttf); }
@@ -41,8 +66,8 @@ header {
       width: 0px;
       height: 0px;
       border-style: solid;
-      margin-left: -1vw;
-      border-width: 0 41vw 36px 0;
+      margin-left: -1.15vw;
+      border-width: 0 40vw 36px 0;
       border-color: transparent #FFFFFF9F transparent transparent;
       transform: rotate(0deg); }
   header .header-content {
@@ -70,31 +95,36 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 5% 100px 5%;
+  padding: 40px 5% 100px 0;
   color: #fff;
   background-color: #000;
   margin-bottom: -100px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 60px; }
   .main .main-content {
-    width: 45%; }
+    width: 50%;
+    padding-left: 5%;
+    padding: 60px 60px 60px 5%;
+    background-color: #990000; }
     .main .main-content h2 {
-      font-size: 2em; }
+      font-size: 1.8em;
+      margin-bottom: 16px; }
+    .main .main-content p {
+      margin-top: 16px; }
   .main nav {
     width: 40%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    border: red 1px solid; }
-    .main nav * {
-      border: red 1px solid; }
+    align-items: center; }
     .main nav a {
       width: 100%;
       display: block;
       font-size: 1.5em;
       margin-top: 10px;
-      color: #fff; }
+      color: #fff;
+      font-weight: bolder; }
       .main nav a .link-bg {
         width: 80%;
         height: 30px;
@@ -108,6 +138,9 @@ header {
         height: 44px;
         background-color: #990000; }
 
+footer {
+  padding: 40px 5% 20px 5%; }
+
 @media screen and (max-width: 800px) {
   .main {
     flex-direction: column;
@@ -115,7 +148,9 @@ header {
     .main .main-content {
       width: 100%; }
     .main nav {
-      width: 100%; } }
+      width: 100%;
+      justify-content: flex-start;
+      padding: 20px; } }
 
 .section {
   min-height: 200px;
@@ -165,8 +200,14 @@ header {
   .section .background-white {
     display: flex;
     flex-direction: row; }
+  .section .center {
+    display: block;
+    padding: 100px 5% 100px 5%;
+    align-items: center;
+    flex-direction: column; }
   .section .section-content {
     min-height: 200px;
+    display: flex;
     justify-content: space-between;
     margin-top: -36px;
     padding: 100px 5% 100px 5%; }

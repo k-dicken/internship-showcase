@@ -62,8 +62,18 @@
         flex-direction: row;
     }
 
+    .center {
+        display: block;
+        padding: 100px 5% 100px 5%;
+        // justify-content: center;
+        align-items: center;
+        // text-align: center;
+        flex-direction: column;
+    }
+
     .section-content {
         min-height: 200px;
+        display: flex;
         justify-content: space-between;
 
         margin-top: -36px;

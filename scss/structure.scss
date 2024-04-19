@@ -15,6 +15,36 @@ h1,h2,h3,h4,h5,h6,p,a,button,span,b,div {
     font-family: Benton Sans;
 }
 
+p {
+    line-height: 24px;
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: #006298;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: #990000;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: white;
+}
+
 @font-face {
     font-family: Benton Sans;
     src: url(../assets/fonts/benton-sans-regular.ttf);
